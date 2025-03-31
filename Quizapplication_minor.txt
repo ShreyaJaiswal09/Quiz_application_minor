@@ -1,0 +1,146 @@
+#include <iostream>
+using namespace std;
+int IQ_quiz(){
+    cout<<"---------------------------------------------------------WELCOME TO THE IQ QUIZ---------------------------------------------------------------"<<endl;
+    cout<<"Please read the below instructions carefully before starting the quiz :- "<<endl;
+    cout<<"1. Quiz has 10 Multiple choice questions. You have to select the most only one option."<<endl;
+    cout<<"2. Try to complete these questions in 10 minutes only that will show how good your IQ level is..."<<endl;
+    cout<<"3. Each question carries 1 mark. There is NO Negative Marking."<<endl;
+    cout<<"4. Do not use UFM. Work independently."<<endl;
+    cout<<"5. If you score 10/10 : Excellent , 9/10 : Very Good , 8/10 : Good, below 8 Please check out again."<<endl;
+    cout<<"6. Press s to start the quiz."<<endl;
+    cout<<"7. Read each question and select the answer from a/b/c/d."<<endl;
+    cout<<"8. Do keep a pen and notepad with you."<<endl;
+    cout<<"9. All the best and have fun !"<<endl;
+    char ch;
+    cout<<"To start the quiz please enter s! "<<endl;
+    cin>>ch;
+    char option;
+    int score=0;
+    if (ch=='s' || ch=='S'){
+        cout<<"Q1. What comes next in the sequence: 2,6,12,20,30,... ?"<<endl;
+        cout<<"a. 40    b. 42    c. 44   d. 46"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='b' || option=='B'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q2. Which word is the odd one out ?"<<endl;
+        cout<<"a. Tape   b. Cassette   c. Deck   d. Record"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='c' || option=='C'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q3. What is the missing number in the sequence : 3 9 27 ... 243 ?"<<endl;
+        cout<<"a. 54   b. 81   c. 108   d. 135"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='b' || option=='B'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q4. Which of the following words is the opposite of mendacious ?"<<endl;
+        cout<<"a. Honest   b. Deceitful   c. Cunning   d. Untrustworthy"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='a' || option=='A'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q5. A clock shows 3:15. What is the angle between the hour and the minute hands ? "<<endl;
+        cout<<"a. 0 degrees   b. 7.5 degrees   c. 30 degrees   d. 37.5 degrees "<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='d' || option=='D'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q6. Which Shape does not belong to this group ? "<<endl;
+        cout<<"a. Square   b. Rectangle   c. Circle   d. Triangle "<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='c' || option=='C'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q7. If all dogs are animals and all animals are living beings, are dogs living beings ?"<<endl;
+        cout<<"a. Yes   b. No   c. Cannot Predict   d. None of above"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='a' || option=='A'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q8. Solve the equation : 5x - 3 = 2. "<<endl;
+        cout<<"a. 2   b. 1   c. 3   d. 0"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='b' || option=='B'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q9.  If the perimeter of a square is 24, find length of one side."<<endl;
+        cout<<"a. 4   b. 3   c. 5   d. 6"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='d' || option=='D'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        cout<<"Q10. A is older than B. C is younger than B. Who is the youngest?"<<endl;
+        cout<<"a. B   b. C   c. A   d. Cannot predict"<<endl;
+        cout<<"Choose a or b or c or d"<<endl;
+        cin>>option;
+        if (option=='b' || option=='B'){
+            score += 1;
+        }
+        else{
+            score += 0;
+        }
+        return score;
+    }
+
+    else{
+        cout<<"Exit"<<endl;
+        return 0;
+
+    }
+
+    
+}
+int main(){
+    int Result = IQ_quiz();
+    cout<<"Your score is : "<<Result<<endl;;
+    if (Result>=8){
+        cout<<"Good Job !"<<endl;
+    }
+    else{
+        cout<<"Need Practice (Recommended to play again)"<<endl;
+        int Result = IQ_quiz();
+        cout<<"Your score is : "<<Result<<endl;;
+    }
+    cout<<"Thank you for playing this IQ building Quiz. All the Best !"<<endl;
+
+    return 0;
+}
